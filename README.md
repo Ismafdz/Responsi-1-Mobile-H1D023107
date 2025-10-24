@@ -1,14 +1,14 @@
-#Responsi 1 Praktikum Pemrograman Mobile
+## Responsi 1 Praktikum Pemrograman Mobile
 Nama       : Isma Fadhilatizzahra
 NIM        : H1D023107
 Shift KRS  : D
 Shift Baru : C 
 
-#Video Demo Aplikasi (Getafe CF {82})
+## Video Demo Aplikasi (Getafe CF {82})
 
 https://github.com/user-attachments/assets/78be5e18-02a0-454c-97a5-95537275a22b
 
-#Alur Penjelasan API Alur Data
+## Alur Penjelasan API Alur Data
 Alur data pada aplikasi ini menggunakan arsitektur modern Android (MVVM) yang memanfaatkan ViewModel untuk manajemen state, Retrofit untuk komunikasi jaringan, Gson untuk parsing JSON, dan LiveData untuk observasi data.
 Berikut adalah penjelasan rincinya langkah demi langkah:
 1. Pemuatan Data Awal (MainActivity & ViewModel)
