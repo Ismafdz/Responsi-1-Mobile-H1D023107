@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HistoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgHistoryHeader"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/stadium_background"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/tvHistoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Getafe CF's History"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvHistoryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:text="
+Getafe Club de Fútbol, yang lebih dikenal sebagai Getafe CF, merupakan klub sepak bola profesional asal Spanyol yang berbasis di kota Getafe, wilayah otonomi Madrid. Klub ini didirikan pada tanggal 24 Februari 1983, meskipun akar sejarahnya dapat ditelusuri hingga tahun 1923 dengan berdirinya klub sebelumnya bernama Club Getafe Deportivo. Setelah klub lama tersebut bubar pada tahun 1982 karena masalah finansial, sekelompok penggemar berinisiatif untuk mendirikan klub baru dengan semangat yang sama, sehingga lahirlah Getafe CF yang kita kenal sekarang.
+
+Perjalanan Getafe CF menuju kasta tertinggi sepak bola Spanyol tidaklah mudah. Klub ini menghabiskan sebagian besar sejarah awalnya di divisi-divisi bawah, sebelum akhirnya menembus La Liga untuk pertama kalinya pada musim 2004/2005. Sejak saat itu, Getafe mulai dikenal sebagai tim yang tangguh dan konsisten, meskipun berasal dari kota kecil di pinggiran Madrid. Keberhasilan mereka bertahan di La Liga selama beberapa musim berturut-turut menjadi bukti perkembangan pesat klub ini baik dari segi manajemen maupun kualitas pemain.
+
+Salah satu periode paling bersejarah bagi Getafe terjadi pada akhir tahun 2000-an, ketika klub berhasil mencapai final Copa del Rey pada musim 2006/2007 dan 2007/2008, meskipun harus puas sebagai runner-up. Prestasi tersebut membawa mereka ke kancah Eropa untuk pertama kalinya melalui ajang Piala UEFA (kini Liga Europa). Dalam kompetisi tersebut, Getafe tampil mengejutkan dengan menyingkirkan beberapa tim kuat sebelum akhirnya tersingkir secara dramatis oleh Bayern Munich.
+
+Dalam hal infrastruktur, Getafe CF bermarkas di Coliseum Alfonso Pérez, stadion berkapasitas sekitar 17.000 penonton yang diresmikan pada tahun 1998. Nama stadion tersebut diambil dari Alfonso Pérez, pemain asal Getafe yang pernah membela Real Madrid dan tim nasional Spanyol. Meskipun tidak sebesar stadion klub-klub besar lainnya, atmosfer di Coliseum dikenal sangat intens dan akrab, mencerminkan kedekatan antara tim dan pendukungnya.
+
+Saat ini, Getafe CF dikenal sebagai klub yang mengandalkan disiplin taktik dan kerja keras kolektif ketimbang nama besar individu. Di bawah berbagai pelatih seperti José Bordalás dan Quique Sánchez Flores, mereka membangun reputasi sebagai tim yang sulit dikalahkan dan mampu menyaingi klub-klub elit Spanyol. Dengan fondasi yang solid dan dukungan loyal dari para penggemarnya, Getafe CF terus berupaya mempertahankan posisinya di La Liga dan menulis sejarah baru dalam sepak bola Spanyol."
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+
+            android:justificationMode="inter_word" />
+
+    </LinearLayout>
+</ScrollView>
