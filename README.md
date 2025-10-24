@@ -1,7 +1,10 @@
 ## Responsi 1 Praktikum Pemrograman Mobile
 Nama       : Isma Fadhilatizzahra
+
 NIM        : H1D023107
+
 Shift KRS  : D
+
 Shift Baru : C 
 
 ## Video Demo Aplikasi (Getafe CF {82})
@@ -17,6 +20,8 @@ Aplikasi pertama kali terbuka di MainActivity.
 MainActivity menginisiasi MainViewModel menggunakan by viewModels().
 
 Saat MainViewModel dibuat (pertama kali), blok init di dalamnya akan langsung memanggil fungsi fetchTeamData().
+
+
 2. Permintaan API (Retrofit & ApiClient)
 Fungsi fetchTeamData() di MainViewModel menampilkan ProgressBar (via LiveData) dan membuat antrean (enqueue) pemanggilan API menggunakan ApiClient.apiService.getTeamDetails().
 
@@ -25,18 +30,24 @@ ApiClient adalah singleton object Retrofit. Saat membuat client, ia menyuntikkan
 Interceptor ini bertugas menambahkan header X-Auth-Token yang berisi Token API Anda ke setiap request yang keluar.
 
 ApiService adalah interface yang mendefinisikan endpoint. Retrofit menggabungkan BASE_URL ("https://api.football-data.org/") dengan @GET ("v4/teams/82") untuk membentuk URL pemanggilan yang lengkap.
+
+
 3. Parsing Data (Gson & Data Models)
 API merespons dengan data JSON yang berisi semua informasi klub.
 
 Retrofit (yang sudah terkonfigurasi dengan GsonConverterFactory) secara otomatis mem-parsing string JSON tersebut menjadi objek data class Kotlin yang telah kita siapkan: TeamResponse.
 
 Objek TeamResponse ini berisi data klub, serta objek Coach dan List<Player> di dalamnya.
+
+
 4. Observasi & Tampilan (LiveData & MainActivity)
 Jika pemanggilan API sukses (onResponse), MainViewModel mengambil response.body() (yang berisi objek TeamResponse) dan memperbarui _teamData.value.
 
 MainActivity secara aktif meng-observe (mengamati) viewModel.teamData.
 
 Saat teamData berubah, MainActivity menerima objek TeamResponse baru. Data ini kemudian ditampilkan di UI (seperti tvClubName, dan memuat crestUrl via Glide) dan juga disimpan dalam cache lokal (teamDataCache) untuk digunakan nanti.
+
+
 5. Alur Navigasi & Pengiriman Data (Intent & Fragment)
 Aplikasi kemudian menunggu interaksi pengguna:
 
